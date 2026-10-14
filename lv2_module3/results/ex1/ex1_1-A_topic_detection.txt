@@ -1,0 +1,23 @@
+$ ros2 topic echo /hsv/detection
+data: detected=True bbox=(433,51,506,191) center=(469,121) area=7539 min_area=300 candidates=1/1
+---
+data: detected=True bbox=(436,49,508,190) center=(472,119) area=7266 min_area=300 candidates=1/2
+---
+data: detected=True bbox=(437,48,508,190) center=(472,119) area=7156 min_area=300 candidates=1/1
+---
+data: detected=True bbox=(440,50,512,191) center=(476,120) area=7174 min_area=300 candidates=1/1
+---
+data: detected=True bbox=(442,52,514,194) center=(478,123) area=7343 min_area=300 candidates=1/1
+---
+data: detected=True bbox=(442,53,514,195) center=(478,124) area=7396 min_area=300 candidates=1/1
+---
+data: detected=True bbox=(440,53,512,193) center=(476,123) area=7444 min_area=300 candidates=1/1
+---
+data: detected=True bbox=(438,54,510,192) center=(474,123) area=7454 min_area=300 candidates=1/2
+---
+data: detected=True bbox=(436,52,508,193) center=(472,122) area=7318 min_area=300 candidates=1/1
+---
+data: detected=True bbox=(434,49,504,186) center=(469,117) area=7284 min_area=300 candidates=1/1
+---
+data: detected=True bbox=(433,49,506,190) center=(469,119) area=7437 min_area=300 candidates=1/1
+---

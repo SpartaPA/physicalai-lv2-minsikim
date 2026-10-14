@@ -1,0 +1,17 @@
+$ ros2 topic echo /camera/camera/color/image_raw --once --field encoding
+rgb8
+---
+
+$ ros2 topic echo /camera/camera/color/image_raw --once --field width
+A message was lost!!!
+        total count change:1
+        total count: 1---
+640
+---
+
+$ ros2 topic echo /camera/camera/color/image_raw --once --field height
+A message was lost!!!
+        total count change:1
+        total count: 1---
+360
+---

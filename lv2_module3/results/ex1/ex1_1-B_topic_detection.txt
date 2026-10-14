@@ -1,0 +1,93 @@
+$ ros2 topic echo /hsv/detection
+data: detected=True bbox=(457,49,546,220) center=(501,134) area=12796 min_area=300 candidates=2/9
+---
+data: detected=True bbox=(457,48,546,219) center=(501,133) area=12692 min_area=300 candidates=2/11
+---
+data: detected=True bbox=(458,47,548,221) center=(503,134) area=12994 min_area=300 candidates=2/12
+---
+data: detected=True bbox=(460,51,552,226) center=(506,138) area=13397 min_area=300 candidates=2/9
+---
+data: detected=True bbox=(462,57,554,234) center=(508,145) area=13836 min_area=300 candidates=3/9
+---
+data: detected=True bbox=(460,62,554,240) center=(507,151) area=14035 min_area=300 candidates=3/7
+---
+data: detected=True bbox=(460,65,556,244) center=(508,154) area=14292 min_area=300 candidates=3/9
+---
+data: detected=True bbox=(464,71,560,253) center=(512,162) area=14647 min_area=300 candidates=3/9
+---
+data: detected=True bbox=(466,80,562,263) center=(514,171) area=14996 min_area=300 candidates=3/8
+---
+data: detected=True bbox=(468,89,564,271) center=(516,180) area=15114 min_area=300 candidates=3/8
+---
+data: detected=True bbox=(466,92,562,272) center=(514,182) area=14995 min_area=300 candidates=3/8
+---
+data: detected=True bbox=(465,91,560,271) center=(512,181) area=14926 min_area=300 candidates=4/7
+---
+data: detected=True bbox=(464,90,560,269) center=(512,179) area=14924 min_area=300 candidates=3/9
+---
+data: detected=True bbox=(462,89,558,269) center=(510,179) area=14858 min_area=300 candidates=3/10
+---
+data: detected=True bbox=(462,88,558,267) center=(510,177) area=14790 min_area=300 candidates=3/5
+---
+data: detected=True bbox=(462,88,560,267) center=(511,177) area=14702 min_area=300 candidates=4/8
+---
+data: detected=True bbox=(464,90,560,269) center=(512,179) area=14718 min_area=300 candidates=3/10
+---
+data: detected=True bbox=(466,91,562,270) center=(514,180) area=14848 min_area=300 candidates=3/10
+---
+data: detected=True bbox=(464,91,560,269) center=(512,180) area=14685 min_area=300 candidates=3/8
+---
+data: detected=True bbox=(462,88,558,264) center=(510,176) area=14382 min_area=300 candidates=3/8
+---
+data: detected=True bbox=(460,83,554,257) center=(507,170) area=14092 min_area=300 candidates=3/8
+---
+data: detected=True bbox=(459,77,554,251) center=(506,164) area=13884 min_area=300 candidates=3/12
+---
+data: detected=True bbox=(459,73,554,249) center=(506,161) area=13791 min_area=300 candidates=3/10
+---
+data: detected=True bbox=(461,72,556,249) center=(508,160) area=13816 min_area=300 candidates=3/10
+---
+data: detected=True bbox=(461,72,556,247) center=(508,159) area=13687 min_area=300 candidates=3/8
+---
+data: detected=True bbox=(460,70,554,244) center=(507,157) area=13531 min_area=300 candidates=2/14
+---
+data: detected=True bbox=(458,68,554,242) center=(506,155) area=13597 min_area=300 candidates=3/10
+---
+data: detected=True bbox=(458,65,554,241) center=(506,153) area=13780 min_area=300 candidates=3/8
+---
+data: detected=True bbox=(458,63,554,241) center=(506,152) area=14071 min_area=300 candidates=3/6
+---
+data: detected=True bbox=(455,62,550,242) center=(502,152) area=14108 min_area=300 candidates=3/8
+---
+data: detected=True bbox=(452,63,548,242) center=(500,152) area=14086 min_area=300 candidates=2/11
+---
+data: detected=True bbox=(456,64,554,243) center=(505,153) area=14014 min_area=300 candidates=3/12
+---
+data: detected=True bbox=(462,66,560,244) center=(511,155) area=13992 min_area=300 candidates=3/7
+---
+data: detected=True bbox=(468,67,566,241) center=(517,154) area=13612 min_area=300 candidates=4/11
+---
+data: detected=True bbox=(472,64,568,236) center=(520,150) area=13391 min_area=300 candidates=3/13
+---
+data: detected=True bbox=(472,59,566,233) center=(519,146) area=13442 min_area=300 candidates=3/9
+---
+data: detected=True bbox=(468,55,560,232) center=(514,143) area=13536 min_area=300 candidates=3/9
+---
+data: detected=True bbox=(460,53,552,229) center=(506,141) area=13418 min_area=300 candidates=2/7
+---
+data: detected=True bbox=(454,50,546,227) center=(500,138) area=13594 min_area=300 candidates=2/14
+---
+data: detected=True bbox=(451,51,546,232) center=(498,141) area=14172 min_area=300 candidates=3/7
+---
+data: detected=True bbox=(456,61,552,248) center=(504,154) area=15146 min_area=300 candidates=3/10
+---
+data: detected=True bbox=(458,74,554,260) center=(506,167) area=15537 min_area=300 candidates=3/9
+---
+data: detected=True bbox=(456,77,552,260) center=(504,168) area=15442 min_area=300 candidates=2/9
+---
+data: detected=True bbox=(454,74,550,254) center=(502,164) area=15040 min_area=300 candidates=1/11
+---
+data: detected=True bbox=(452,68,548,247) center=(500,157) area=14712 min_area=300 candidates=2/8
+---
+data: detected=True bbox=(450,63,544,240) center=(497,151) area=14267 min_area=300 candidates=2/12
+---

@@ -1,0 +1,30 @@
+$ ros2 topic echo /hsv/detection
+data: detected=False min_area=300 candidates=0/2
+---
+data: detected=False min_area=300 candidates=0/1
+---
+data: detected=False min_area=300 candidates=0/2
+---
+data: detected=False min_area=300 candidates=0/1
+---
+data: detected=False min_area=300 candidates=0/2
+---
+data: detected=False min_area=300 candidates=0/2
+---
+data: detected=False min_area=300 candidates=0/1
+---
+data: detected=False min_area=300 candidates=0/1
+---
+data: detected=False min_area=300 candidates=0/2
+---
+data: detected=False min_area=300 candidates=0/1
+---
+data: detected=False min_area=300 candidates=0/2
+---
+data: detected=False min_area=300 candidates=0/2
+---
+data: detected=False min_area=300 candidates=0/1
+---
+data: detected=False min_area=300 candidates=0/1
+---
+data: detected=False min_area=300 candidates=0/1
