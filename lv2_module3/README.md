@@ -74,8 +74,8 @@ python3 lv2_module3/HSV_SUB.py --ros-args -p lower_hsv:="[90, 150, 50]" -p min_a
 results/
 ├── topic_info/                  토픽 목록, topic info --verbose, Raw Image header·encoding·해상도
 ├── ex1/                         실험 1: S 하한 80(A) vs 150(B) Mask 캡처, 참고 원본, Mask 측정값,
-│                                         150에서 빛 반사된 퍽 미검출 Overlay
+│                                         150에서 빛 반사된 퍽 미검출 Overlay, /hsv/detection echo 로그
 ├── ex2/                         실험 2: min_area 300(A) vs 1000(B) Overlay (근거리 / 원거리 _small)
-├── no_target/                   목표 없음: HSV·min_area 조합별 Overlay, /hsv/detection echo 로그
+├── no_target/                   목표 없음: HSV·min_area 조합별 Overlay
 └── overlay_area_readings.txt    Overlay에서 읽은 Contour 면적과 통과·탈락 정리
 ```

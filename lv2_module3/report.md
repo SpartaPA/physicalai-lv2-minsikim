@@ -119,7 +119,7 @@ findContours(RETR_EXTERNAL)
 
 `/hsv/overlay`는 입력 영상 위에 모든 Contour 외곽선(통과 노랑, `min_area` 탈락 빨강)과 면적 숫자, 선택 목표의 초록 박스·중심점, 좌상단 `detected=... min_area=...` 문구를 그린다. 실험 2 캡처에서 초록 박스와 중심점은 Raw Image 위 퍽 위치와 일치했다([ex2_A_area_300.png](./results/ex2/ex2_A_area_300.png)). 반대로 목표가 없는 장면에서는 초록 박스가 상의 가장자리에 그려진 오검출도 관찰했다([no_target_area_300_hsv_90-80-50.png](./results/no_target/no_target_area_300_hsv_90-80-50.png)).
 
-실제 수신 메시지: [ros_topic_echo_hsv_detection.txt](./results/no_target/ros_topic_echo_hsv_detection.txt) (`data: detected=False min_area=300 candidates=0/2` 등)
+실제 수신 메시지: [ros_topic_echo_hsv_detection.txt](./results/ex1/ros_topic_echo_hsv_detection.txt) (`data: detected=False min_area=300 candidates=0/2` 등)
 
 ---
 
@@ -161,8 +161,8 @@ findContours(RETR_EXTERNAL)
 
 | 묶음 | Raw Image | Mask (`/hsv/mask`) | 검출 결과 |
 | --- | --- | --- | --- |
-| 1-A `[90,80,50]` | [ex1_raw_ref_20261014.png](./results/ex1/ex1_raw_ref_20261014.png) | [ex1_A_lower90-80-50_mask.png](./results/ex1/ex1_A_lower90-80-50_mask.png) | 관찰: 채도 허용 범위가 넓어 빛을 받은 옷 윤곽을 따라 넓은 범위가 Mask에 남았다. `/hsv/detection` 로그 [./ex1/ex1_1-A_topic_detection.txt](./ex1/ex1_1-A_topic_detection.txt) |
-| 1-B `[90,150,50]` | [ex1_raw_ref_20261014.png](./results/ex1/ex1_raw_ref_20261014.png) | [ex1_B_lower90-150-50_mask.png](./results/ex1/ex1_B_lower90-150-50_mask.png) | 관찰: 채도 범위를 좁혀 A보다 남은 영역이 적었고, 퍽은 A와 같이 남았다. `/hsv/detection` 로그 [./ex1/ex1_1-B_topic_detection.txt](./ex1/ex1_1-B_topic_detection.txt) |
+| 1-A `[90,80,50]` | [ex1_raw_ref_20261014.png](./results/ex1/ex1_raw_ref_20261014.png) | [ex1_A_lower90-80-50_mask.png](./results/ex1/ex1_A_lower90-80-50_mask.png) | 관찰: 채도 허용 범위가 넓어 빛을 받은 옷 윤곽을 따라 넓은 범위가 Mask에 남았다. `/hsv/detection` 로그 [ex1_1-A_topic_detection.txt](./results/ex1/ex1_1-A_topic_detection.txt) |
+| 1-B `[90,150,50]` | [ex1_raw_ref_20261014.png](./results/ex1/ex1_raw_ref_20261014.png) | [ex1_B_lower90-150-50_mask.png](./results/ex1/ex1_B_lower90-150-50_mask.png) | 관찰: 채도 범위를 좁혀 A보다 남은 영역이 적었고, 퍽은 A와 같이 남았다. `/hsv/detection` 로그 [ex1_1-B_topic_detection.txt](./results/ex1/ex1_1-B_topic_detection.txt) |
 | 1-B 추가 관찰 | [ex1_B_lit_puck_miss_hsv_90-150-50_area_300.png](./results/ex1/ex1_B_lit_puck_miss_hsv_90-150-50_area_300.png) (Overlay) | — | 빛을 받은 퍽이 일부만 남아 면적 293 < 300, `detected=False` |
 
 | Raw Image (참고) | 1-A Mask (S ≥ 80) | 1-B Mask (S ≥ 150) |
@@ -262,7 +262,7 @@ findContours(RETR_EXTERNAL)
 | `[90,80,50]`, `min_area=1000` | `detected=False` (최대 556 탈락) | [no_target_area_1000_hsv_90-80-50.png](./results/no_target/no_target_area_1000_hsv_90-80-50.png) |
 | `[90,150,50]`, `min_area=300` | `detected=False` (20 안팎 조각만 남음) | [no_target_area_300_hsv_90-150-50.png](./results/no_target/no_target_area_300_hsv_90-150-50.png) |
 
-- 미검출 표현: `/hsv/detection`에 `data: detected=False min_area=300 candidates=0/2`처럼 **매 프레임 계속 발행**되었다([ros_topic_echo_hsv_detection.txt](./results/no_target/ros_topic_echo_hsv_detection.txt)). 메시지가 끊기지 않고 들어오므로 입력과 처리 노드가 계속 동작함을 확인했다. Overlay에는 좌상단에 빨간 `detected=False` 문구가 표시되고 초록 박스가 그려지지 않는다.
+- 미검출 표현: `/hsv/detection`에 `data: detected=False min_area=300 candidates=0/2`처럼 **매 프레임 계속 발행**되었다([ros_topic_echo_hsv_detection.txt](./results/ex1/ros_topic_echo_hsv_detection.txt)). 메시지가 끊기지 않고 들어오므로 입력과 처리 노드가 계속 동작함을 확인했다. Overlay에는 좌상단에 빨간 `detected=False` 문구가 표시되고 초록 박스가 그려지지 않는다.
 - 로그 파일은 기록 시각(20:03)상 `[90,150,50]`, `min_area=300` 실행 중에 받은 것으로 보인다(`candidates=0/1~2`가 작은 조각 몇 개만 남은 캡처와 맞음).
 
 ---
